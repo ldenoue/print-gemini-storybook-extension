@@ -1,0 +1,7 @@
+# Print Gemini Storybooks
+
+- Open any shared storybooks, e.g. https://gemini.google.com/share/cbd4c3dece1e
+- Click the extension
+- See the printable version opened in a new tab
+
+Created by Laurent Denoue https://x.com/ldenoue
