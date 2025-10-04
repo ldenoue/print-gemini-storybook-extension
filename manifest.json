@@ -2,7 +2,7 @@
   "author": "Laurent Denoue https://x.com/ldenoue",
   "manifest_version": 3,
   "name": "Print Gemini Storybook as PDF",
-  "version": "1.1",
+  "version": "1.2",
   "description": "One button to create a printable version of any Gemini Storybook as PDF",
   "permissions": ["activeTab", "scripting"],
   "background": {
@@ -10,11 +10,11 @@
   },
   "action": {
     "default_icon": {
-      "48": "icons/sparkle48.png"
+      "128": "icons/icon-round-128.png"
     },
-    "default_title": "Extract Story"
+    "default_title": "Printable Storybook"
   },
   "icons": {
-    "48": "icons/sparkle48.png"
+    "128": "icons/icon-round-128.png"
   }
 }

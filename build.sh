@@ -1,2 +1,2 @@
-zip -vr print-gemini-storybook.zip manifest.json background.js icons/sparkle48.png
+zip -vr print-gemini-storybook.zip manifest.json background.js icons/icon-round-128.png
 

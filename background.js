@@ -2,6 +2,14 @@ chrome.action.onClicked.addListener((tab) => {
   chrome.scripting.executeScript({
     target: { tabId: tab.id },
     func: () => {
+      let pages = document.querySelectorAll('.page:not([class*="cover"])');
+      if (pages.length < 10)
+        pages = document.querySelectorAll('.storybook .spread-container');
+
+      if (pages.length < 4) {
+        alert('please try on a Gemini StoryBook, e.g. https://gemini.google.com/share/cbd4c3dece1e')
+        return;
+      }
       const title = document.querySelector('.cover-title')?.textContent || 'Untitled';
       const w = window.open('', '_blank');
       const doc = w.document;
@@ -19,10 +27,6 @@ chrome.action.onClicked.addListener((tab) => {
       h2.style = style + ';text-align:center';
       h2.textContent = title;
       div.appendChild(h2);
-
-      let pages = document.querySelectorAll('.page:not([class*="cover"])');
-      if (pages.length < 10)
-        pages = document.querySelectorAll('.storybook .spread-container');
 
       for (const p of pages) {
         const src = p.querySelector('img')?.src;
